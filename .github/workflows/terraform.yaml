@@ -30,15 +30,15 @@
          id: validate
          run: terraform validate 
 
-       - name: Terraform Plan
-         id: plan
-         run: terraform plan 
-         continue-on-error: true    
-         env:
-           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-       - name: Terraform APPLY
-         id: Apply
-         run: terraform apply -auto-approve 
-         continue-on-error: true    
-         env:
-           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
+     #  - name: Terraform Plan
+     #    id: plan
+     #    run: terraform plan 
+     #    continue-on-error: true    
+     #    env:
+     #      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+     #  - name: Terraform APPLY
+     #    id: Apply
+     #    run: terraform apply -auto-approve 
+     #    continue-on-error: true    
+     #    env:
+     #      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
